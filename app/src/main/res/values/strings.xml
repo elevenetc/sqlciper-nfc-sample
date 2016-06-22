@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SqlCipherNfc</string>
+    <string name="servicedesc">NfcServiceSample</string>
 </resources>
