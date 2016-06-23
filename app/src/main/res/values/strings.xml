@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SqlCipherNfc</string>
     <string name="servicedesc">NfcServiceSample</string>
+    <string name="aiddescription">NfcServiceSample</string>
+    <string name="card_title">NfcServiceSample</string>
+    <string name="service_name">CardEmulation Sample</string>>
+    <string name="account_number">Account Number</string>
 </resources>

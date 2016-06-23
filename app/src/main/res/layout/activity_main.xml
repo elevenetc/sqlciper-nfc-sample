@@ -14,4 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
+
+    <Button
+        android:id="@+id/btn_set_default"
+        android:text="Set default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
