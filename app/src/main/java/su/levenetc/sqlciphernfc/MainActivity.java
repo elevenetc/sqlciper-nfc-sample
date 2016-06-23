@@ -25,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         SQLiteDatabase database = App.getDatabase();
-        if (database == null) {
-
-        }
     }
 
     private void setDefaultTapAndPay() {
