@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import net.sqlcipher.database.SQLiteDatabase;
+
 import su.levenetc.sqlciphernfc.service.NfcService;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
                 setDefaultTapAndPay();
             }
         });
+
+        SQLiteDatabase database = App.getDatabase();
+        if (database == null) {
+
+        }
     }
 
     private void setDefaultTapAndPay() {

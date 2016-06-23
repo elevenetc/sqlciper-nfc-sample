@@ -10,6 +10,9 @@ import java.io.File;
  * Created by eugene.levenetc on 23/06/16.
  */
 public class App extends Application {
+
+    private static SQLiteDatabase database;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -21,8 +24,14 @@ public class App extends Application {
         File databaseFile = getDatabasePath("demo.db");
         databaseFile.mkdirs();
         databaseFile.delete();
-        SQLiteDatabase database = SQLiteDatabase.openOrCreateDatabase(databaseFile, "test123", null);
+        database = SQLiteDatabase.openOrCreateDatabase(databaseFile, "test123", null);
         database.execSQL("create table t1(a, b)");
         database.execSQL("insert into t1(a, b) values(?, ?)", new Object[]{"one for the money", "two for the show"});
     }
+
+    public static SQLiteDatabase getDatabase() {
+        return database;
+    }
+
+
 }
